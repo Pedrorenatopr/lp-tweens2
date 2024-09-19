@@ -1,0 +1,1270 @@
+* {
+    line-height: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 1em;
+    justify-content: space-around;
+    background-color: #5A4029;
+    margin-bottom: 0; 
+    z-index: 1;
+}
+
+nav .opcoes  {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav .opcoes.mostrar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+
+
+nav .opcoes a {
+    color: white;
+}
+
+
+nav button.menu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: transparent;
+}
+
+nav button.menu span {
+    background-color: #D2AB68;
+    position: absolute;
+    border-radius: 5px;
+    height: 3px;
+    transition: all 0.3s;
+}
+
+nav button.menu span.um {
+    width: 25px;
+    bottom: 4px;
+    right: 0;
+}
+
+nav button.menu span.dois {
+    width: 35px;
+    top: 4px;
+    right: 0;
+
+}
+
+nav button.menu.ativo span {
+    background-color: rgb(249, 0, 0);
+    position: absolute;
+    border-radius: 5px;
+    height: 3px;
+}
+
+nav button.menu.ativo span.um {
+    width: 30px;
+    bottom: 8px;
+    right: -5px;
+    transform: rotate(45deg);
+}
+
+nav button.menu.ativo span.dois {
+    width: 30px;
+    top: 8px;
+    right: -5px;
+    transform: rotate(-45deg);
+
+
+}
+
+.box-mobile {
+    display: none;
+}
+
+.bt-principal {
+    color: #5A4029;
+    background: white;
+    display: inline-flex;
+    height: 56px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    background-image: url(fundo-primeira-dobra800px.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: right;
+    background-color: #D2AB68;
+    height: 665px;
+}
+
+.box-principal {
+    max-width: 1150px;
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.box-principal .card {
+    max-width: 1150px;  
+}
+
+.card-dois {
+}
+
+h1 {
+    color: #5A4029;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 97.75px */
+    max-width: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box-bt {
+    display: flex;
+    gap: 20px;
+}
+
+.bt-card-principal {
+    color: white;
+    background: #5A4029;
+    display: inline-flex;
+    height: 56px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 5px;
+
+}
+
+.bt-transparent {
+    display: flex;
+    width: 185px;
+    height: 56px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.section-dois h2 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 80px;
+    color: white;
+    background-image: url(img-segunda-dobra.png);
+    background-size: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+
+}
+
+.container-dois {
+    display: none;
+    background-image: url(fundo-floral-dois.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    margin-bottom: 100px;
+}
+
+.box-dois {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.box-dois .card {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.box-dois .card h2 {
+    text-align: center;
+    padding-top: 70px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.52);
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 100px;
+    width: 1150px;
+    height: 270px;
+    background-image: url(fundo-dois.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+}
+
+.container-produtos {
+    display: grid;
+    justify-content: center;
+    background-image: url(fundo-floral-dois.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
+}
+
+.produtos {
+
+}
+
+.container-produtos .produtos h2 {
+    padding-left: 50px;
+    font-size: 50px;
+    color: #464646;
+    padding-bottom: 0px;
+    font-weight: 400;
+}
+
+.destaque-produtos {
+    background-color: #D2AB68;
+    position: absolute;
+    border-radius: 5px;
+    height: 5px;
+    transition: all 0.3s;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+.container-produtos .produtos .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1150px;
+    gap: 5px;
+    padding-top: 50px;
+}
+
+.container-produtos .produtos .card img {
+    width: 350px;
+}
+
+.container-sobre {
+    display: grid;
+    justify-content: center;
+    background-color: #F3F2F0;
+    margin-top: 200px;
+    padding-top: 50px;
+
+}
+
+.sobre .card  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1150px;
+    padding-top: 50px;
+
+}
+
+.sobre .card .texto {
+    width: 500px;
+}
+
+
+.sobre .card .img {
+    width: 500px;
+}
+
+.sobre .card .img img {
+    width: 500px;
+}
+
+.container-sobre .sobre .card .texto h3 {
+    color: #FF7A00;
+    font-size: 30px;
+}
+
+
+.texto-sobre {
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.112px */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bt-sobre {    
+    color: white;
+    background: #221E42;
+    display: inline-flex;
+    height: 56px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    background: #5A4029;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contato .texto h2 {
+    color: white;
+    font-size: 39.931px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.contato .texto p {
+    padding-top: 20px;
+    width: 300px;
+    color: #c3c3c3;
+}
+
+
+
+.bt-contato {
+    color: white;
+    background: black;
+    display: inline-flex;
+    height: 56px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+footer {
+    background: #221E42;
+    color: white;
+    padding-top: 100px;
+}
+
+footer .card {
+    display: flex;
+    justify-content: center;
+    gap: 380px;
+}
+
+.texto-footer {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+
+}
+
+.card-contato {
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+}
+
+
+
+.card-dois-footer {
+    display: grid;
+    gap: 5px;
+
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    gap: 380px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 14px;
+
+}
+
+.copy-um {
+    display: flex;
+    gap: 30px ;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .container-dois {
+        padding-bottom: 50px;
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 150px;
+        font-size: 80px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 400px;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+    
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+
+    .container {
+        display: flex;
+        background-image: url(fundo-primeira-dobra575px.png);
+        background-repeat: no-repeat;
+        justify-content: center;
+        background-position: right;
+        background-color: #D2AB68;
+        height: 675px;
+    }
+
+    .box-principal .card {
+    }
+
+    h1 {
+        font-size: 60px;
+        width: 450px;
+    }
+
+    .card-dois img {
+        width: 530px;
+    }
+
+    .container-sobre {
+        display: grid;
+        justify-content: center;
+        margin-top: 100px; 
+        padding-top: 50px;   
+    }
+    
+    .sobre .card  {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .sobre .card .texto {
+        width: 100%;
+        padding-left: 3em;
+    }
+    
+    
+    .sobre .card .img {
+        width: 400px;
+    }
+    
+    .sobre .card .img img {
+        width: 400px;
+    }
+    
+    
+    .texto-sobre {
+        color: #000;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 51.112px */
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        padding: 1em;
+        justify-content: space-between;
+    }
+    
+    nav .opcoes  {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: aliceblue;
+        background-color: #5A4029;
+        top: 70px;
+        right: 20px;
+        position: fixed;
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+        padding: 30px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s;
+    }
+
+    .bt-principal {
+        display: none;
+    }
+
+    .box-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #D2AB68;
+        padding-bottom: 50px;
+    }
+
+
+    nav .opcoes.mostrar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+    
+    .opcoes a {
+        color: black;
+    }
+    
+    
+    nav button.menu {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        background-color: transparent;
+    }
+    
+    nav button.menu span {
+        background-color: #D2AB68;
+        position: absolute;
+        border-radius: 5px;
+        height: 3px;
+        transition: all 0.3s;
+    }
+    
+    nav button.menu span.um {
+        width: 25px;
+        bottom: 4px;
+        right: 0;
+    }
+    
+    nav button.menu span.dois {
+        width: 35px;
+        top: 4px;
+        right: 0;
+    
+    }
+    
+    nav button.menu.ativo span {
+        background-color: rgb(249, 0, 0);
+        position: absolute;
+        border-radius: 5px;
+        height: 3px;
+    }
+    
+    nav button.menu.ativo span.um {
+        width: 30px;
+        bottom: 8px;
+        right: -5px;
+        transform: rotate(45deg);
+    }
+    
+    nav button.menu.ativo span.dois {
+        width: 30px;
+        top: 8px;
+        right: -5px;
+        transform: rotate(-45deg);
+    
+    
+    }
+    
+
+    .container {
+        background-image: none;
+        width: 100%;
+        display: none;
+
+    }
+    
+    .box-principal {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .box-principal .card {
+        width: 100%;
+    }
+
+    .card-dois img {
+        width: 100%;
+    }
+    
+    .card-dois {
+        display: grid;
+        background-image: none;
+        background-repeat: no-repeat;
+        justify-content: center;
+        padding-left: 1em;
+        height: 500px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .box-bt {
+        display: flex;
+        gap: 20px;
+    }
+
+    .box-mobile .card {
+        padding-left: 2em;
+    }
+
+    .box-mobile .card p {
+        display: none;
+    }
+    
+    .bt-transparent {
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 150px;
+        font-size: 50px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 300px;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+    
+    }
+
+    
+
+
+    .container-dois {
+        background-image: url(fundo-floral.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .box-dois {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .box-dois .card {
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .box-dois .card h2 {
+        padding-top: 70px;
+        font-size: 70px;
+        margin-top: 0px;
+        width: 700px;
+        padding-top: 50px;
+        height: 200px;
+        border-radius: 10px;
+        border: solid 1px #D2AB68;
+    }
+
+    .container-produtos .produtos h2 {
+        padding-left: 50px;
+        font-size: 30px;
+        padding-bottom: 0px;
+    }
+
+    .container-produtos .produtos .card img {
+        width: 300px;
+    }
+
+    .container-sobre {
+        display: grid;
+        justify-content: center;
+        margin-top: 100px;  
+        padding-left: 1em;  
+    }
+    
+    .sobre .card  {
+        display: grid;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .sobre .card .texto {
+        width: 100%;
+        padding-left: 1em;
+    }
+    
+    
+    .sobre .card .img {
+        width: 100%;
+    }
+    
+    .sobre .card .img img {
+        width: 100%;
+    }
+    
+    
+    .texto-sobre {
+        color: #000;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 51.112px */
+    }
+
+    .contato {
+        display: grid;
+        justify-content: left;
+        gap: 50px;
+        background: #5A4029;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 3em;
+    }
+
+    footer {
+        background: #221E42;
+        color: white;
+        padding-top: 100px;
+    }
+    
+    footer .card {
+        display: grid;
+        justify-content: left;
+        padding-left: 3em;
+        gap: 100px;
+    }
+    
+    .texto-footer {
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    
+    }
+    
+    .card-contato {
+        display: flex;
+        align-items: center;
+        gap: 20px ;
+    }
+    
+    
+    
+    .card-dois-footer {
+        display: grid;
+        gap: 5px;
+    
+    }
+    
+    .copy {
+        display: grid;
+        justify-content: left;
+        padding-left: 3.5em;
+        gap: 0px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+    }
+    
+    .copy-um {
+        display: none;
+    }
+    
+
+
+
+    
+    
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 50px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .container {
+        display: none;
+        background-image: url(img-loja-mobile_11zon.webp);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        justify-content: center;
+        padding-left: 1em;
+    }
+    
+    .box-principal {
+        width: 100%;
+        display: flex;
+        padding-top: 150px;
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 30px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 250px;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    
+    }
+
+
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .box-dois .card h2 {
+        padding-top: 70px;
+        font-size: 50px;
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 100PX;
+        padding-right: 100px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 65px;
+        padding: 1em;
+        justify-content: space-between;
+        background-color: #5A4029;
+        align-items: center;
+    }
+
+    .box-mobile .card {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .box-bt .bt-card-principal {
+        width: 50%;
+        display: inline-flex;
+        height: 56px;
+        padding: 0px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        flex-shrink: 0;
+        border-radius: 5px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+
+    .box-bt .bt-transparent {
+        width: 50%;
+        display: flex;
+        height: 56px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 80px;
+        font-size: 30px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 200px;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    
+    }
+
+    .box-dois .card h2 {
+        padding-top: 70px;
+        font-size: 50px;
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100px;
+    }
+
+    .container-dois {
+        margin-bottom: 50px;
+    }
+
+    .container-produtos .produtos h2 {
+        padding-left: 1em;
+        font-size: 30px;
+    }
+
+    .destaque-produtos {
+        margin-left: 30px;
+    }
+
+    .container-produtos .produtos .card img {
+        width: 150px;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .sobre .card {
+        gap: 50px;
+    }
+
+    .texto-sobre {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .contato {
+        display: grid;
+        justify-content: left;
+        gap: 40px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        padding-left: 1em;
+
+    }
+
+    
+    .contato .texto h2 {
+        font-size: 39.931px;
+        font-style: normal;
+        font-weight: 400;
+        padding-top: 60px;
+    }
+
+    .bt-contato {
+        margin-top: 0;
+    }
+
+    footer {
+        background: #221E42;
+        color: white;
+        padding-top: 100px;
+    }
+    
+    footer .card {
+        padding-left: 2em;
+        gap: 100px;
+    }
+    
+    .texto-footer {
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    
+    }
+    
+    .card-contato {
+        display: flex;
+        align-items: center;
+        gap: 20px ;
+    }
+    
+    
+    
+    .card-dois-footer {
+        display: grid;
+        gap: 5px;
+    
+    }
+    
+    .copy {
+        display: grid;
+        justify-content: left;
+        padding-left: 2em;
+        gap: 0px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    
+    }
+    
+    .copy-um {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 60px;
+        font-size: 30px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 200px;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    
+    }
+
+    .container-produtos .produtos h2 {
+        padding-left: 15px;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+
+    .destaque-produtos {
+        margin-left: 15px;
+    }
+
+    .container-produtos .produtos .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        justify-content: center;
+        gap: 5px;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container-produtos .produtos .card img {
+        width: 100%;
+    }
+
+    .sobre .card .texto {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+
+    footer .card {
+        padding-left: 1em;
+    }
+
+    .copy {
+        padding-left: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    .box-dois .card h2 {
+        padding-top: 0px;
+        font-size: 40px;
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 63px;
+    }
+
+    .box-dois {
+        padding-top: 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        height: 400px;
+    }
+
+    .box-principal {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 364px) {
+
+    .box-dois .card h2 {
+        padding-top: 0px;
+        font-size: 40px;
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 63px;
+    }
+
+    .box-dois {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 30px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 200px;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+    
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+
+    .box-dois .card h2 {
+        padding-top: 0px;
+        font-size: 40px;
+        margin-top: 0px;
+        width: 100%;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 63px;
+    }
+
+    .box-dois {
+        padding-top: 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        height: 400px;
+    }
+
+    .box-principal {
+        padding-top: 100px;
+    }
+
+    .section-dois h2 {
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+        color: white;
+        background-image: url(img-segunda-dobra.png);
+        background-size: 100vw;
+        height: 200px;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+    
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .container-dois .box-dois .card .box-h2 h2 {
+        font-size: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
+
+}
